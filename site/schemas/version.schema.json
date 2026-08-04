@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./version.schema.json",
+  "title": "Hausbar app version",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["appVersion", "assetVersion", "language", "manifestVersion", "masterVersion", "releaseStage", "schemaVersion", "timezone"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "appVersion": {"type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+-preview\\.[0-9]+$"},
+    "assetVersion": {"const": "v7.66"},
+    "language": {"const": "de"},
+    "manifestVersion": {"const": "v2.00"},
+    "masterVersion": {"const": "v7.66"},
+    "releaseStage": {"const": "PHASE1_PREVIEW_KANDIDAT_01"},
+    "timezone": {"const": "Europe/Berlin"}
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "masterCsv": {
+      "sha256": "02e8efbbb01b71e180deb53e2141d79709b495d18d9393dadf76d6d0adc001b4",
+      "records": 142,
+      "columns": 57
+    },
+    "masterXlsx": {
+      "sha256": "2c68e80ab0f077f26184103c6650eeeca30198245d12bad64c110504eb03c3b9"
+    },
+    "stableAssetPackageZip": {
+      "sha256": "927ae5edf4bb7e762833e6d01d86786c114371aa762fc8f03105c3f691597e58"
+    },
+    "assetMappingCsv": {
+      "sha256": "941c920cfb1621931934211e5ec8d094420ab7d765f98bdcc7f327b2b2d7ca3e",
+      "records": 154,
+      "columns": 34
+    },
+    "assetManifestJson": {
+      "sha256": "ec13942ddccb000ec96ca86bfe241bbf957d3e7e1577a54e9d4ae8187897c623"
+    },
+    "phase0TransferMatrix": {
+      "sha256": "5baf35170543513a9e5fcae4520d5fad2ad746784a176daa419fde85bb734337"
+    },
+    "phase0AuditSummary": {
+      "sha256": "0d46bef6d4748c07f09659928420848ba1e495c916f83deb4fd0ef28b041f9c5"
+    },
+    "manifestV200": {
+      "sha256": "6ad5a77f686ea0b55ecb225c3ae6a86a9a8eb8ba4bddcd7c76992d30ac195bc6"
+    },
+    "historicalAppReadOnly": {
+      "sha256": "1d0a875c7f61256a561079b33adeb388ad29625147c9a271cbda096d85dfb0d8",
+      "usage": "READ_ONLY_REFERENCE_NOT_INPUT"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Fully locked offline reference environment for CPython 3.13 / Linux x86_64.
+# Install only with: python -m pip install --no-index --no-deps --require-hashes -r requirements-lock.txt --find-links vendor/wheels/cp313-linux-x86_64
+et_xmlfile==2.0.0 \
+    --hash=sha256:64a5857fb15ad589b8e7150e992a433e7e5c72e6fe4b0fba8436ca2f4a8717fb
+openpyxl==3.1.5 \
+    --hash=sha256:d5ab2c51bd9357ebf026fda5febef4c20ef69185d99182f82d3c114603647c50
+Pillow==12.2.0 \
+    --hash=sha256:9c5f37101e2a09ab8524c97432fd5265740320963dbeee07025c49d61103eab4

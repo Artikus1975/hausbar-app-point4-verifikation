@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Technisches Phase-1-Grundgerüst für Murats Hausbar App.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Murats Hausbar</title>
+</head>
+<body>
+  <main class="shell" aria-labelledby="page-title">
+    <header class="masthead">
+      <p class="eyebrow">Phase 1 · Technischer Preview-Kandidat</p>
+      <h1 id="page-title">Murats Hausbar</h1>
+      <p class="intro">Getrennte App-Linie mit bereinigtem Masterexport, ID-basierten Assets, Datenschutz-Gate und PWA-Grundfunktion.</p>
+    </header>
+
+    <section class="status-panel" aria-labelledby="status-title">
+      <div class="section-heading">
+        <h2 id="status-title">Systemstatus</h2>
+        <span id="overall-status" class="badge" role="status" aria-live="polite">Prüfung läuft</span>
+      </div>
+      <dl class="status-grid">
+        <div>
+          <dt>App-Version</dt>
+          <dd id="app-version">–</dd>
+        </div>
+        <div>
+          <dt>Master</dt>
+          <dd id="master-version">–</dd>
+        </div>
+        <div>
+          <dt>Produkte</dt>
+          <dd id="inventory-count">–</dd>
+        </div>
+        <div>
+          <dt>Assets</dt>
+          <dd id="asset-count">–</dd>
+        </div>
+        <div>
+          <dt>Hashprüfung</dt>
+          <dd id="integrity-status">–</dd>
+        </div>
+        <div>
+          <dt>Verbindung</dt>
+          <dd id="network-status">–</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="scope" aria-labelledby="scope-title">
+      <h2 id="scope-title">Bewusst begrenzter Umfang</h2>
+      <p>Dieser Stand enthält noch keine Inventaroberfläche, keine Rezeptmigration und kein ausgearbeitetes Designsystem. Er dient ausschließlich als überprüfbare Daten-, Datenschutz-, Test- und Deploymentbasis für die folgenden Phasen.</p>
+    </section>
+
+    <noscript>Für die technische Integritätsprüfung muss JavaScript aktiviert sein.</noscript>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>

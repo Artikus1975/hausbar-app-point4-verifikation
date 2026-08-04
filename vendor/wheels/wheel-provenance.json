@@ -1,0 +1,38 @@
+{
+  "method": "REPACKED_FROM_VERIFIED_INSTALLED_DISTRIBUTION",
+  "packages": [
+    {
+      "distribution": "openpyxl",
+      "includedFiles": 197,
+      "installedDistInfo": "openpyxl-3.1.5.dist-info",
+      "version": "3.1.5",
+      "wheelBytes": 251296,
+      "wheelFile": "openpyxl-3.1.5-py2.py3-none-any.whl",
+      "wheelMetadata": "Wheel-Version: 1.0\nGenerator: bdist_wheel (0.43.0)\nRoot-Is-Purelib: true\nTag: py2-none-any\nTag: py3-none-any\n\n",
+      "wheelSha256": "d5ab2c51bd9357ebf026fda5febef4c20ef69185d99182f82d3c114603647c50"
+    },
+    {
+      "distribution": "et_xmlfile",
+      "includedFiles": 12,
+      "installedDistInfo": "et_xmlfile-2.0.0.dist-info",
+      "version": "2.0.0",
+      "wheelBytes": 18458,
+      "wheelFile": "et_xmlfile-2.0.0-py3-none-any.whl",
+      "wheelMetadata": "Wheel-Version: 1.0\nGenerator: setuptools (72.2.0)\nRoot-Is-Purelib: true\nTag: py3-none-any\n\n",
+      "wheelSha256": "64a5857fb15ad589b8e7150e992a433e7e5c72e6fe4b0fba8436ca2f4a8717fb"
+    },
+    {
+      "distribution": "pillow",
+      "includedFiles": 142,
+      "installedDistInfo": "pillow-12.2.0.dist-info",
+      "version": "12.2.0",
+      "wheelBytes": 6894117,
+      "wheelFile": "pillow-12.2.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "wheelMetadata": "Wheel-Version: 1.0\nGenerator: setuptools (82.0.1)\nRoot-Is-Purelib: false\nTag: cp313-cp313-manylinux_2_27_x86_64\nTag: cp313-cp313-manylinux_2_28_x86_64\n\n",
+      "wheelSha256": "9c5f37101e2a09ab8524c97432fd5265740320963dbeee07025c49d61103eab4"
+    }
+  ],
+  "platform": "linux-x86_64",
+  "python": "3.13.5",
+  "schemaVersion": 1
+}

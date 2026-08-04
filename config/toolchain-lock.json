@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "correctionPackageVersion": "v0.1.0-preview.2",
+  "publicAppVersionMustRemain": "v0.1.0-preview.1",
+  "python": {
+    "implementation": "CPython",
+    "exactReferenceVersion": "3.13.5",
+    "majorMinor": "3.13"
+  },
+  "platform": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "wheelDirectory": "vendor/wheels/cp313-linux-x86_64"
+  },
+  "packages": [
+    {
+      "distribution": "et_xmlfile",
+      "importName": "et_xmlfile",
+      "version": "2.0.0",
+      "direct": false,
+      "wheel": "et_xmlfile-2.0.0-py3-none-any.whl",
+      "sha256": "64a5857fb15ad589b8e7150e992a433e7e5c72e6fe4b0fba8436ca2f4a8717fb"
+    },
+    {
+      "distribution": "openpyxl",
+      "importName": "openpyxl",
+      "version": "3.1.5",
+      "direct": true,
+      "wheel": "openpyxl-3.1.5-py2.py3-none-any.whl",
+      "sha256": "d5ab2c51bd9357ebf026fda5febef4c20ef69185d99182f82d3c114603647c50"
+    },
+    {
+      "distribution": "Pillow",
+      "importName": "PIL",
+      "version": "12.2.0",
+      "direct": true,
+      "wheel": "pillow-12.2.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "9c5f37101e2a09ab8524c97432fd5265740320963dbeee07025c49d61103eab4"
+    }
+  ],
+  "installation": {
+    "networkAllowed": false,
+    "requireHashes": true,
+    "noDependenciesResolution": true
+  },
+  "provenance": {
+    "wheelMethod": "REPACKED_FROM_VERIFIED_INSTALLED_DISTRIBUTION",
+    "provenanceFile": "vendor/wheels/wheel-provenance.json"
+  }
+}

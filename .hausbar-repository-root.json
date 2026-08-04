@@ -1,0 +1,21 @@
+{
+  "correctionPackageVersion": "v0.1.0-preview.3",
+  "forbiddenParentWrapperNames": [
+    "app",
+    "v0.1.0-preview.3"
+  ],
+  "publicAppVersionMustRemain": "v0.1.0-preview.1",
+  "repositoryId": "murats-hausbar-app",
+  "repositoryRootRule": "THIS_FILE_MUST_BE_IN_GIT_REPOSITORY_ROOT",
+  "requiredRootEntries": [
+    ".github",
+    "config",
+    "site",
+    "tests",
+    "tools",
+    "vendor",
+    "README.md",
+    "requirements-lock.txt"
+  ],
+  "schemaVersion": 1
+}

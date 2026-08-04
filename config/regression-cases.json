@@ -1,0 +1,50 @@
+{
+  "expected": {
+    "additionalAssets": 12,
+    "assetRecords": 154,
+    "inventoryRecords": 142,
+    "primaryAssets": 142,
+    "uniqueProductIds": 142
+  },
+  "protectedCases": [
+    {
+      "assert": {
+        "name": "Amaro Averna Siciliano",
+        "nr": 2
+      },
+      "id": "csv-143-amaro-averna-siciliano"
+    },
+    {
+      "assert": {
+        "bestand.anzahl": 1,
+        "flasche.groesseMl": 20
+      },
+      "id": "csv-004-chilla-das-original-aperitivo-bavarese"
+    },
+    {
+      "assert": {
+        "bestand.anzahl": 1
+      },
+      "id": "csv-038-tanqueray-london-dry-gin"
+    },
+    {
+      "assert": {
+        "nr": 28
+      },
+      "id": "csv-028-weingut-meyer-naekel-spaetburgunder-trester"
+    },
+    {
+      "assert": {
+        "nr": 29
+      },
+      "id": "csv-029-hotel-starlino-maraschino-cherries"
+    },
+    {
+      "assert": {
+        "nr": 91
+      },
+      "id": "csv-091-lebkuchen-rum"
+    }
+  ],
+  "schemaVersion": 1
+}

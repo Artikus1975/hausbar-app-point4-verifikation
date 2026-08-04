@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./inventory.schema.json",
+  "title": "Hausbar public inventory export",
+  "type": "object",
+  "required": ["schemaVersion", "masterVersion", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "masterVersion": {"type": "string", "pattern": "^v[0-9]+\\.[0-9]+$"},
+    "items": {
+      "type": "array",
+      "minItems": 142,
+      "maxItems": 142,
+      "items": {"$ref": "#/$defs/product"}
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {"type": "string", "minLength": 1},
+    "stringArray": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["alkohol", "beschreibung", "bestand", "bilder", "flasche", "geschmacksTags", "herkunft", "hersteller", "id", "kategorie", "logik", "name", "nr", "nutzungsTags", "unterkategorie"],
+      "properties": {
+        "alkohol": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["prozent", "status"],
+          "properties": {
+            "prozent": {"type": "number", "minimum": 0},
+            "status": {"enum": ["ALKOHOLISCH", "ALKOHOLFREI"]}
+          }
+        },
+        "beschreibung": {"$ref": "#/$defs/nonEmptyString"},
+        "bestand": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["aktiv", "anzahl", "einheit", "fuellstand", "mengeText", "oeffnungsstatus", "statusCode"],
+          "properties": {
+            "aktiv": {"type": "boolean"},
+            "anzahl": {"type": "integer", "minimum": 1},
+            "einheit": {"$ref": "#/$defs/nonEmptyString"},
+            "fuellstand": {"$ref": "#/$defs/nonEmptyString"},
+            "mengeText": {"$ref": "#/$defs/nonEmptyString"},
+            "oeffnungsstatus": {"$ref": "#/$defs/nonEmptyString"},
+            "statusCode": {"$ref": "#/$defs/nonEmptyString"}
+          }
+        },
+        "bilder": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["haupt", "zusatz"],
+          "properties": {
+            "haupt": {"type": "string", "pattern": "^assets/images/inventory/csv-[a-z0-9-]+__haupt\\.jpg$"},
+            "zusatz": {
+              "type": "array",
+              "items": {"type": "string", "pattern": "^assets/images/inventory/csv-[a-z0-9-]+__zusatz-[0-9]{2}\\.jpg$"},
+              "uniqueItems": true
+            }
+          }
+        },
+        "flasche": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["groesseMl"],
+          "properties": {"groesseMl": {"type": "integer", "minimum": 1}}
+        },
+        "geschmacksTags": {"$ref": "#/$defs/stringArray"},
+        "herkunft": {"$ref": "#/$defs/nonEmptyString"},
+        "hersteller": {"$ref": "#/$defs/nonEmptyString"},
+        "id": {"type": "string", "pattern": "^csv-[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "kategorie": {"$ref": "#/$defs/nonEmptyString"},
+        "logik": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["appFilterPrimaer", "appFilterSekundaer", "cocktailRelevanz", "cocktailrolle", "empfohleneCocktailtypen", "flavorPrimaer", "flavorSekundaer", "gastmodusRelevanz", "mixerGarnishSirupAbgrenzung", "produktart"],
+          "properties": {
+            "appFilterPrimaer": {"$ref": "#/$defs/nonEmptyString"},
+            "appFilterSekundaer": {"$ref": "#/$defs/nonEmptyString"},
+            "cocktailRelevanz": {"$ref": "#/$defs/nonEmptyString"},
+            "cocktailrolle": {"$ref": "#/$defs/nonEmptyString"},
+            "empfohleneCocktailtypen": {"$ref": "#/$defs/stringArray"},
+            "flavorPrimaer": {"$ref": "#/$defs/nonEmptyString"},
+            "flavorSekundaer": {"$ref": "#/$defs/stringArray"},
+            "gastmodusRelevanz": {"$ref": "#/$defs/nonEmptyString"},
+            "mixerGarnishSirupAbgrenzung": {"$ref": "#/$defs/nonEmptyString"},
+            "produktart": {"$ref": "#/$defs/nonEmptyString"}
+          }
+        },
+        "name": {"$ref": "#/$defs/nonEmptyString"},
+        "nr": {"type": "integer", "minimum": 1},
+        "nutzungsTags": {"$ref": "#/$defs/stringArray"},
+        "unterkategorie": {"$ref": "#/$defs/nonEmptyString"}
+      }
+    }
+  }
+}

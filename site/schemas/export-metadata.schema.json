@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./export-metadata.schema.json",
+  "title": "Hausbar export metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["assetVersion", "counts", "historicalAppUsedAsInput", "masterVersion", "policy", "schemaVersion", "sourceHashes"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "masterVersion": {"const": "v7.66"},
+    "assetVersion": {"const": "v7.66"},
+    "historicalAppUsedAsInput": {"const": false},
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["additionalAssets", "assetRecords", "inventoryRecords", "primaryAssets"],
+      "properties": {
+        "additionalAssets": {"const": 12},
+        "assetRecords": {"const": 154},
+        "inventoryRecords": {"const": 142},
+        "primaryAssets": {"const": 142}
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowlistSha256", "mode", "privateFieldsSerialized"],
+      "properties": {
+        "allowlistSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "mode": {"const": "DENY_BY_DEFAULT"},
+        "privateFieldsSerialized": {"const": 0}
+      }
+    },
+    "sourceHashes": {
+      "type": "object",
+      "minProperties": 9,
+      "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+    }
+  }
+}

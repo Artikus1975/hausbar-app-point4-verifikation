@@ -1,0 +1,100 @@
+{
+  "actions": [
+    {
+      "commitSha": "d23441a48e516b6c34aea4fa41551a30e30af803",
+      "commitUrl": "https://github.com/actions/checkout/commit/d23441a48e516b6c34aea4fa41551a30e30af803",
+      "releaseTag": "v6.1.0",
+      "releaseUrl": "https://github.com/actions/checkout/releases/tag/v6.1.0",
+      "repository": "actions/checkout"
+    },
+    {
+      "commitSha": "ece7cb06caefa5fff74198d8649806c4678c61a1",
+      "commitUrl": "https://github.com/actions/setup-python/commit/ece7cb06caefa5fff74198d8649806c4678c61a1",
+      "releaseTag": "v6.3.0",
+      "releaseUrl": "https://github.com/actions/setup-python/releases/tag/v6.3.0",
+      "repository": "actions/setup-python"
+    },
+    {
+      "commitSha": "249970729cb0ef3589644e2896645e5dc5ba9c38",
+      "commitUrl": "https://github.com/actions/setup-node/commit/249970729cb0ef3589644e2896645e5dc5ba9c38",
+      "releaseTag": "v6.5.0",
+      "releaseUrl": "https://github.com/actions/setup-node/releases/tag/v6.5.0",
+      "repository": "actions/setup-node"
+    },
+    {
+      "commitSha": "983d7736d9b0ae728b81ab479565c72886d7745b",
+      "commitUrl": "https://github.com/actions/configure-pages/commit/983d7736d9b0ae728b81ab479565c72886d7745b",
+      "releaseTag": "v5.0.0",
+      "releaseUrl": "https://github.com/actions/configure-pages/releases/tag/v5.0.0",
+      "repository": "actions/configure-pages"
+    },
+    {
+      "commitSha": "7b1f4a764d45c48632c6b24a0339c27f5614fb0b",
+      "commitUrl": "https://github.com/actions/upload-pages-artifact/commit/7b1f4a764d45c48632c6b24a0339c27f5614fb0b",
+      "releaseTag": "v4.0.0",
+      "releaseUrl": "https://github.com/actions/upload-pages-artifact/releases/tag/v4.0.0",
+      "repository": "actions/upload-pages-artifact"
+    },
+    {
+      "commitSha": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "commitUrl": "https://github.com/actions/deploy-pages/commit/d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "releaseTag": "v4.0.5",
+      "releaseUrl": "https://github.com/actions/deploy-pages/releases/tag/v4.0.5",
+      "repository": "actions/deploy-pages"
+    }
+  ],
+  "correctionPackageVersion": "v0.1.0-preview.3",
+  "node": {
+    "officialRelease": "https://nodejs.org/en/blog/release/v22.16.0/",
+    "version": "22.16.0",
+    "versionFile": ".node-version"
+  },
+  "offlinePythonInstallation": {
+    "flags": [
+      "--no-index",
+      "--no-deps",
+      "--require-hashes"
+    ],
+    "networkAllowed": false,
+    "requirementsLock": "requirements-lock.txt",
+    "venvLocation": "${{ runner.temp }}/hausbar-ci-venv",
+    "wheelDirectory": "vendor/wheels/cp313-linux-x86_64"
+  },
+  "protectedFiles": {
+    "publicSiteLockSha256": "15af927010f865a2c12d9c572c1d176f7d62f32598e170cb41a0eb6bee7c1147",
+    "requirementsLockSha256": "a74fa13fe0b56358279af8919f080ebd5f3382eaff466d6f8bc331ef032b02bb",
+    "rootMarkerSha256": "0ca4d2947556dec717ef4f1cdb6a734c00661db11122f554bc4bd0388cd1ac45",
+    "toolchainLockSha256": "8b92434adccdba9cb803c540106764ec045554bfc85dbf9754e923039488a5ca",
+    "wheelProvenanceSha256": "91095a5685036ded8e40b553f9416cdb3814eb38507774c757a011ec106b7e51"
+  },
+  "publicSite": {
+    "fileCount": 172,
+    "lockFile": "config/public-site-lock.json",
+    "treeSha256": "ed6da5035e0a0943b35fd183e6ffd84771b8abd73d5a3133ecc0c806575b37c4"
+  },
+  "python": {
+    "implementation": "CPython",
+    "version": "3.13.5",
+    "versionFile": ".python-version"
+  },
+  "repositoryRootMarker": ".hausbar-repository-root.json",
+  "runner": {
+    "jobs": [
+      "build",
+      "deploy"
+    ],
+    "label": "ubuntu-24.04"
+  },
+  "schemaVersion": 1,
+  "scopeExclusion": [
+    "Problemregisterpunkt 5 tests",
+    "inventory UI tests",
+    "recipe tests"
+  ],
+  "status": "LOCAL_TECHNICAL_CANDIDATE_REAL_GITHUB_RUN_REQUIRED",
+  "verifiedAtUtc": "2026-08-04T15:04:49Z",
+  "workflow": {
+    "path": ".github/workflows/pages.yml",
+    "sha256": "5c8f9316190bf83ef351cbbcc89732affac402f4b13010124f422c00cd81c1a0"
+  }
+}

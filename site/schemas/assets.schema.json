@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./assets.schema.json",
+  "title": "Hausbar public asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "assetVersion", "items"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "assetVersion": {"type": "string", "pattern": "^v[0-9]+\\.[0-9]+$"},
+    "items": {
+      "type": "array",
+      "minItems": 154,
+      "maxItems": 154,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["breitePixel", "dateigroesseByte", "hoehePixel", "id", "mimeTyp", "pfad", "rolle", "sha256"],
+        "properties": {
+          "breitePixel": {"type": "integer", "minimum": 1, "maximum": 1600},
+          "dateigroesseByte": {"type": "integer", "minimum": 1},
+          "hoehePixel": {"type": "integer", "minimum": 1, "maximum": 1600},
+          "id": {"type": "string", "pattern": "^csv-[0-9]{3}-[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "mimeTyp": {"const": "image/jpeg"},
+          "pfad": {"type": "string", "pattern": "^assets/images/inventory/csv-[a-z0-9-]+__(haupt|zusatz-[0-9]{2})\\.jpg$"},
+          "rolle": {"enum": ["haupt", "zusatz"]},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    }
+  }
+}
